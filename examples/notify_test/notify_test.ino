@@ -20,9 +20,6 @@
 #define UUID_SERVICE  0x3802
 #define UUID_CHAR     0x4a02
 
-#define NOTIFY_TEST
-// #define BASE_SETTING
-
 
 /****************************************************************************
  * ble parameters
@@ -60,7 +57,6 @@ void loop() {
   const int digit_num_size = 4;
   uint8_t data[digit_num_size] = {0};
 
-#ifdef NOTIFY_TEST
   /*
    * Transmit one byte data once per second.
    * The data increases by one for each trasmission.
@@ -72,8 +68,6 @@ void loop() {
   }
   
   ble1507->writeNotify(data, digit_num_size);
-#endif
 
   sleep(1);
-
 }
