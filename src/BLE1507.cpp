@@ -298,11 +298,6 @@ static void onSaveBondInfo(int num, struct ble_bondinfo_s *bond) {
   FILE *fp;
   int sz;
 
-
-
-  /* remove the bound info file if it changes */
-  //removeBondInfo(num, bond);
-
   /* 
    * In this example, save the parameter `num` and each members of
    * the parameter `bond` in order to the file.
