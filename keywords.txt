@@ -9,3 +9,4 @@ is_ble_notify_enabled	KEYWORD2
 setNotifyCallback	KEYWORD2
 setWriteCallback	KEYWORD2
 setReadCallback		KEYWORD2
+removeBoundingInfo	KEYWORD2
