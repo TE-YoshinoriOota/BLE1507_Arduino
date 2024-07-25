@@ -54,11 +54,6 @@ void BleCB(struct ble_gatt_char_s *ble_gatt_char) {
   printf("write_callback!\n");
   printf("value : ");
   printf("%s", &ble_gatt_char->value.data[0]);
-  /*
-  for (int i = 0; i < ble_gatt_char->value.length; i++) {
-    printf("%c", ble_gatt_char->value.data[i]);
-  }
-  */
   printf("\n");
 }
 
